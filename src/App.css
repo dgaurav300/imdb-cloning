@@ -1,0 +1,30 @@
+nav{
+  display: flex;
+  background-color: black;
+  padding: 5px;
+  color:white;
+}
+.search-input{
+  width: 120px;
+}
+.search-container{
+  display: flex;
+  padding: 0px;
+  
+  background-color: white;
+}
+.search-btn{
+  border: 0.5px black solid;
+  border-left: none;
+
+  background-color: white;
+
+}
+.search-input{
+  border: 0.5px black solid;
+  border-right: none;
+}
+.search-category{
+  border: 0.5px black solid;
+  margin-right: 0px;
+}
