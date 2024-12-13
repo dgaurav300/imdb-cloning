@@ -1,3 +1,6 @@
+html,body{
+  background-color: black;
+}
 nav{
   display: flex;
   background-color: black;
@@ -56,6 +59,44 @@ nav{
   text-decoration: none;
   color: white;
 }
+.browse-trailers h4{
+  padding: 4px;
+}
+h4:hover{
+ color:rgb(245,197,24);
+ padding: 4px;
+ display:inline ;
+ 
+}
+.browse-trailers{
+  background-color:black;
+  color:white;
+  cursor: pointer;
+}
+.featured-today{
+  background-color: black !important;
+  color:white;
+  padding: 4px;
+}
+.featured-today h1{
+  color:rgb(245,197,24);
+}
+.item{
+  height:250px;
+}
+.flex-container{
+  display: flex;  
+  background-color: black; 
+  flex-wrap:nowrap; 
+}
+.flex-container img{
+  width:35%;
+  
+
+}
+
+
+
 @media screen and (min-width:320px) and (max-width:480px)  {
   .megaMenuButton span,.search-category,.watchlist{
     display: none;

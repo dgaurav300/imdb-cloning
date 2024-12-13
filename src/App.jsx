@@ -4,8 +4,11 @@ import './App.css'
 import { IoReorderThree } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { CiBookmarkPlus } from "react-icons/ci";
+import { FaArrowRight } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from './components/Slider';
+import after from './images/after-movie-poster.jpg'
+import { Col, Container, Row } from 'react-bootstrap';
 
 function App() {
  
@@ -54,7 +57,34 @@ function App() {
           </div>
      </nav>
       
-     <Slider/>  
+     <Slider/> 
+     <Container>
+       <Row className='browse-trailers'>
+         <h4>Browse trailers <FaArrowRight/></h4>
+       </Row>
+       <Row className='featured-today' >
+         <h1>Featured Today</h1>
+       </Row>
+       <Row style={{overflowX: "scroll"}}>
+          <div  className='col flex-container'>
+           <img src={after}/>
+           <img src={after}/>    
+           <img src={after}/>
+          </div>
+          <div className='col flex-container'>
+           <img src={after}/>
+           <img src={after}/>    
+           <img src={after}/>
+          </div>
+          <div className='col flex-container'>
+           <img src={after}/>
+           <img src={after}/>    
+           <img src={after}/>
+          </div>
+          
+         
+       </Row>
+      </Container> 
     </>
   )
 }
